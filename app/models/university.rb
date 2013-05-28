@@ -3,4 +3,8 @@ class University < ActiveRecord::Base
 
   has_many :scholarships
 	has_many :students, through: :scholarships
+
+  def to_s
+    self.name
+  end
 end
