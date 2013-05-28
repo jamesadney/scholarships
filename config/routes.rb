@@ -1,12 +1,10 @@
 Scholarships::Application.routes.draw do
+
+  root :to => "scholarships#index"
+
   resources :scholarships
-
-
   resources :students
-
-
   resources :universities
-
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
