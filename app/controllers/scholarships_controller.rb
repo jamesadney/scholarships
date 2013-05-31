@@ -40,7 +40,6 @@ class ScholarshipsController < ApplicationController
   # POST /scholarships
   # POST /scholarships.json
   def create
-    binding.pry
     @scholarship = Scholarship.new(params[:scholarship])
 
     respond_to do |format|
